@@ -1,7 +1,7 @@
 import pickle
 import pandas as pd
 
-path = "../../REP3_WT/scenicplus/scplus_obj.pkl"
+path = "../../REP3_SD/scenicplus/scplus_obj.pkl"
 
 with open(path, "rb") as f:
     scplus_obj = pickle.load(f)
@@ -27,7 +27,7 @@ for key, pyranges_obj in cistromes.items():
 tf2r = pd.DataFrame(tf2r_rows, columns=["TF", "Region"])
 
 
-tf2g.to_csv("../Results/REP3_WT_TF2G.csv", index = False)
-r2g.to_csv("../Results/REP3_WT_R2G.csv", index = False)
-tf2r.to_csv("../Results/REP3_WT_TF2R.csv", index = False)
+tf2g.to_csv("../Results/REP3_SD_TF2G.csv", index = False)
+r2g.to_csv("../Results/REP3_SD_R2G.csv", index = False)
+tf2r.to_csv("../Results/REP3_SD_TF2R.csv", index = False)
 
